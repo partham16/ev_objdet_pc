@@ -1,0 +1,11 @@
+--find-links  https://download.pytorch.org/whl/torch_stable.html
+--trusted-host pypi.python.org
+--trusted-host pypi.org
+--trusted-host files.pythonhosted.org
+
+# fastai==2.0.19
+# fastcore==1.1.2
+icedata==0.1.0
+icevision==0.2.2.post2
+torch==1.6.0+cu101
+torchvision==0.7.0+cu101
