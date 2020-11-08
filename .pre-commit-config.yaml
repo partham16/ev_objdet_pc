@@ -4,6 +4,8 @@ repos:
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
+        # https://github.com/psf/black/issues/395
+        exclude: "./*.ipynb"
       - id: check-yaml
       - id: check-added-large-files
       - id: check-ast
@@ -19,3 +21,4 @@ repos:
         entry: codespell README.md src/* tests/*
         language: python
         types: [text]
+        exclude: "./*.ipynb"
