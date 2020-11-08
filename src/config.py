@@ -19,7 +19,7 @@ class Config:
     num_workers = 4
     num_freeze_epochs = 10
     num_postfreeze_epochs = 30
-    do_savemodel = False
+    do_savemodel = True
     model_savename = (
         "fasterrcnn_r50_fpn_coco" if use_model == "faster_rcnn" else use_model + "_coco"
     )
