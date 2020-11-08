@@ -23,4 +23,4 @@ class Config:
     model_savename = (
         "fasterrcnn_r50_fpn_coco" if use_model == "faster_rcnn" else use_model + "_coco"
     )
-    model_savepath = f"../models/{model_savename}_epochs-{num_freeze_epochs}-{num_postfreeze_epochs}.pth"
+    model_savepath = f"./models/{model_savename}_epochs-{num_freeze_epochs}-{num_postfreeze_epochs}.pth"
