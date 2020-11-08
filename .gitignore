@@ -1,4 +1,4 @@
 py36/*
-models/*
+models/*.pth
 .*/
 src/__*/
