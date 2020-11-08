@@ -41,6 +41,8 @@ git_user:
 	git config --global user.email "43367843+partham16@users.noreply.github.com"
 
 colab_rsa:
+	# https://stackoverflow.com/a/793867/13070032
+	mkdir -p /root/.ssh
 	cp ../.ssh/ev_objdet_pc/* /root/.ssh/
 
 chmodx:
