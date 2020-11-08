@@ -4,7 +4,8 @@
 import gc
 
 import torch
-from icevision import ClassMap, COCOMetric, COCOMetricType, Dataset, faster_rcnn, tfms
+from icevision import (ClassMap, COCOMetric, COCOMetricType, Dataset,
+                       faster_rcnn, tfms)
 
 from .config import Config
 from .parsing import do_parsing

@@ -1,5 +1,6 @@
 [flake8]
 per-file-ignores =
   src/train.py: F401
+  src/__init__.py: F401
 max-line-length = 120
 ignore = E203 E501

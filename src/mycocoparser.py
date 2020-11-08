@@ -12,7 +12,8 @@ import numpy as np
 from icevision import ClassMap
 from icevision.core import BBox
 from icevision.parsers import Parser
-from icevision.parsers.mixins import BBoxesMixin, FilepathMixin, LabelsMixin, SizeMixin
+from icevision.parsers.mixins import (BBoxesMixin, FilepathMixin, LabelsMixin,
+                                      SizeMixin)
 from PIL import Image, ImageStat
 from tqdm import tqdm
 
