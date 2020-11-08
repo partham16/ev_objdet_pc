@@ -10,5 +10,5 @@ icevision==0.2.2.post2
 ipykernel==5.3.4
 numpy==1.19.4
 scipy==1.5.4
-torch==1.6.0+cu101
-torchvision==0.7.0+cu101
+torch==1.6.0+cpu
+torchvision==0.7.0+cpu
