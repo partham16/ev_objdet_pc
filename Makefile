@@ -23,4 +23,12 @@ isort:
 mypy:
 	mypy src --ignore-missing-imports
 
-check: black isort precommit
+pylint:
+	pylint src --min-public-methods 0
+
+flake:
+	flake8 src --ignore=E501
+
+check: black isort flake mypy precommit
+
+fullcheck: check pylint
