@@ -3,8 +3,8 @@
 --trusted-host pypi.org
 --trusted-host files.pythonhosted.org
 
-fastai==2.0.19
-# fastcore==1.1.2
+# fastai==2.0.19
+fastcore==1.1.2
 icedata==0.1.0
 icevision==0.2.2.post2
 ipykernel==5.3.4
