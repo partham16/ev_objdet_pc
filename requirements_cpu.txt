@@ -12,3 +12,4 @@ numpy==1.19.4
 scipy==1.5.4
 torch==1.6.0+cpu
 torchvision==0.7.0+cpu
+gdown==3.6.4
