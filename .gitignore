@@ -1,4 +1,6 @@
 py36/*
 models/*.pth
-.*/
+.ipynb*/
+.mypy*/
+.vscode/*
 src/__*/

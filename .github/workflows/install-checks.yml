@@ -1,0 +1,26 @@
+name: Install on Python 36 37 38
+on:
+  push:
+    branches: ["main", "master", "gh-action"]
+  pull_request:
+    branches: ["main", "master"]
+jobs:
+  build:
+    name: run install and check
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.6, 3.7, 3.8]
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: setup python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: use makefile
+        run: |
+          make full_install
+          make check
+          python ev_predict.py
