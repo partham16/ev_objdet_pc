@@ -22,4 +22,5 @@ jobs:
       - name: use makefile
         run: |
           make full_install
-          make fullcheck
+          make check
+          python ev_predict.py
