@@ -8,6 +8,8 @@ repos:
         exclude: "./*.ipynb"
       - id: check-yaml
       - id: check-added-large-files
+        # https://gdevops.gitlab.io/tuto_git/tools/pre-commit/repos_hooks/repo_pre_commit_hooks/check-added-large-files/check-added-large-files.html#check-added-large-files-prevent-giant-files-from-being-committed
+        args: ["--maxkb=900"]
       - id: check-ast
       - id: check-json
         exclude: (.devcontainer/*.json|.vscode/launch.json)
