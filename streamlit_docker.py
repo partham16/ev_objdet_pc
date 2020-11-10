@@ -45,8 +45,10 @@ def run_app():
 
     # label = st.sidebar.checkbox(label="Label", value=True)
     # bbox = st.sidebar.checkbox(label="Bounding Box", value=True)
+    label = True
+    bbox = True
 
-    st.markdown("## A faster-rcnn object detection model")
+    st.markdown("## A `faster-rcnn` object detection model")
     st.markdown(">  of persons and cars")
     st.markdown("### ** Drag & Drop an image**")
     uploaded_file = st.file_uploader("")  # image upload widget
