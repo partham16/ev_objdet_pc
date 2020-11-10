@@ -27,6 +27,11 @@ class Predicter:
     def get_model(self):
         """return pretrained model as per config"""
         get_pretrained()
+        return self.load_model()
+
+    def load_model(self):
+        """separate out model loading, and call this in self.get_model
+        after getting pretrained model downloaded"""
         if ConfigPredict.use_model == "faster_rcnn":
             model = self.model_container.model(
                 backbone=None, num_classes=len(self.class_map), pretrained=False
