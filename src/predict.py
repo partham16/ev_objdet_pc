@@ -11,7 +11,8 @@ from .get_pretrained import get_pretrained
 class Predicter:
     """A predicter class to streamline all the necessary steps"""
 
-    def __init__(self):
+    def __init__(self, download=True):
+        """set download to False if already downloaded the model"""
         self.img = None
         # image transforms
         self.tfms = tfms.A.Adapter([tfms.A.Normalize()])
@@ -22,11 +23,12 @@ class Predicter:
         # cpu for predict
         self.device = torch.device("cpu")
         # model
-        self.model = self.get_model()
+        self.model = self.get_model(download)
 
-    def get_model(self):
+    def get_model(self, download=True):
         """return pretrained model as per config"""
-        get_pretrained()
+        if download:
+            get_pretrained()
         return self.load_model()
 
     def load_model(self):

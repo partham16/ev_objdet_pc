@@ -10,8 +10,7 @@ from src import ConfigPredict
 @st.cache(allow_output_mutation=True)
 def load_model():
     """load the model and cache"""
-    predicter = Predicter()
-    predicter.load_model()
+    predicter = Predicter(download=False)
     return predicter
 
 
