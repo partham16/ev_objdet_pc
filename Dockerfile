@@ -1,4 +1,4 @@
-FROM python:3.6-slim
+FROM python:3.8-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV PIP_NO_CACHE_DIR=1
@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y gcc \
 RUN mkdir -p models \
     && gdown "https://drive.google.com/uc?id=1vwHgzExqIyt9Ln-l9CWmMTwecULnfnUd" -O ./models/fasterrcnn_r50.pth
 
-COPY . .
+COPY streamlit_docker.py ./streamlit_docker.py
+COPY src/* ./src/
 
 EXPOSE 8501
 
