@@ -1,4 +1,4 @@
-name: Install on Python 36 37 38
+name: Install on Python 38
 on:
   push:
     branches: ["main", "master", "gh-action"]
@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.8]
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
