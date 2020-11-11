@@ -1,0 +1,10 @@
+py36/*
+models/*.pth
+.*/
+src/__*/
+.*
+Dockerfile*
+*.ipynb
+ev*.py
+*.md
+LICENSE

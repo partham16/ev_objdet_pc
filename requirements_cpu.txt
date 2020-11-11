@@ -13,3 +13,6 @@ scipy==1.5.4
 torch==1.6.0+cpu
 torchvision==0.7.0+cpu
 gdown==3.6.4
+# opencv-python==4.4.0.46
+# opencv-python-headless==4.4.0.44
+# dataclasses==0.7
