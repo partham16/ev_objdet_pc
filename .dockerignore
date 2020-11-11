@@ -1,7 +1,7 @@
 py36/*
 models/*.pth
 .*/
-src/__*/
+# src/__*/
 .*
 Dockerfile*
 *.ipynb
