@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y gcc \
     && pip install -r requirements_cpu.txt \
     && pip install streamlit==0.70.0 \
     && apt-get remove -y gcc \
-    && apt-get -y clean && apt-get -y autoremove && rm -rf /var/lib/apt/lists/*
+    && apt-get autoremove -yqq --purge && apt-get -y clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p models \
     && gdown "https://drive.google.com/uc?id=1vwHgzExqIyt9Ln-l9CWmMTwecULnfnUd" -O ./models/fasterrcnn_r50.pth
